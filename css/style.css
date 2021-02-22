@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100px;
+  background-color: #101010;
+}
+header .container {
+  width: 1200px;
+  margin: auto;
+}
+header .header_top {
+  height: 45px;
+  line-height: 45px;
+}
+header .header_top nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+header .header_top nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header_top nav li {
+  padding-right: 20px;
+}
+header .header_top nav li a {
+  text-decoration: none;
+  color: #989898;
+}
+header .header_top nav li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+header .header_top nav li a i {
+  padding-right: 10px;
+  color: #009cff;
+}
+header .header_bottom {
+  height: calc(55px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header_bottom .logo {
+  width: 90px;
+  margin: 20px;
+}
+
+nav.navbar {
+  height: 100%;
+}
+nav.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+nav.navbar ul li {
+  padding: 20px;
+  margin-right: 20px;
+}
+nav.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav.navbar ul li:hover {
+  background-color: #fff;
+}
+nav.navbar ul li:hover a {
+  color: #101010;
+}

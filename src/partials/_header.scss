@@ -1,0 +1,42 @@
+header {
+  height: $height_100;
+  background-color: $black;
+  @include container;
+  .#{&}_top {
+    height: $height_45;
+    line-height: $height_45;
+    nav {
+      @include flex(flex-end);
+      height: 100%;
+      ul {
+        list-style-type: none;
+        @include flex();
+      }
+      li {
+        padding-right: $padd_20;
+
+        a {
+          text-decoration: none;
+          color: $grey;
+          &:hover {
+            color: $white;
+            text-decoration: underline;
+          }
+          i {
+            padding-right: $padd_10;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  .#{&}_bottom {
+    height: $height_header_bottom;
+    @include flex();
+    .logo {
+      width: 90px;
+      margin: 20px;
+    }
+
+  }
+}
