@@ -1,0 +1,28 @@
+li.parent_dropdown {
+  position: relative;
+  .dropdown {
+    width: 200px;
+    background-color: $white;
+    position: absolute;
+    top: $height_header_bottom;
+    left: 0;
+    display: none;
+    ul {
+      @include flex();
+      flex-direction: column;
+      li.dropdown_link {
+        @include flex();
+
+        &:hover {
+          background-color: $grey;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .dropdown {
+      display: block;
+    }
+  }
+}

@@ -53,6 +53,9 @@ header .header_bottom .logo {
   width: 90px;
   margin: 20px;
 }
+header .header_bottom ul {
+  padding-left: 20px;
+}
 
 nav.navbar {
   height: 100%;
@@ -76,4 +79,40 @@ nav.navbar ul li:hover {
 }
 nav.navbar ul li:hover a {
   color: #101010;
+}
+
+.jumbotron {
+  background-image: url("../img/bg-painter-home.jpg");
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+li.parent_dropdown {
+  position: relative;
+}
+li.parent_dropdown .dropdown {
+  width: 200px;
+  background-color: #fff;
+  position: absolute;
+  top: calc(55px);
+  left: 0;
+  display: none;
+}
+li.parent_dropdown .dropdown ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+li.parent_dropdown .dropdown ul li.dropdown_link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+li.parent_dropdown .dropdown ul li.dropdown_link:hover {
+  background-color: #989898;
+}
+li.parent_dropdown:hover .dropdown {
+  display: block;
 }
